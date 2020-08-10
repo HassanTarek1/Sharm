@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Activities extends StatefulWidget {
+class NightLife extends StatefulWidget {
   @override
-  _ActivitiesState createState() => _ActivitiesState();
+  _NightLifeState createState() => _NightLifeState();
 }
 
-class _ActivitiesState extends State<Activities> {
+class _NightLifeState extends State<NightLife> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: <Widget>[
           Container(
-            padding: EdgeInsets.fromLTRB(10, 30, 10, 30),
+            padding: EdgeInsets.fromLTRB(10, 50, 10, 30),
             decoration: BoxDecoration(
               color:  const Color.fromRGBO(233, 75, 69,1),
               borderRadius: new BorderRadius.only(
@@ -25,17 +25,19 @@ class _ActivitiesState extends State<Activities> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 Row(
-
                   children: <Widget>[
-                    FlatButton.icon(onPressed: (){}, icon: Icon(
+                    IconButton(onPressed: (){}, icon: Icon(
                       Icons.arrow_back,
                       color: Colors.white,
-                    ), label: Text('')),
-                    SizedBox(width: 210,),
-                    FlatButton.icon(onPressed:() {}, icon: Icon(
+                      size: 30,
+                      )
+                    ),
+                    SizedBox(width: 280,),
+                    IconButton(onPressed:() {}, icon: Icon(
                       Icons.menu,
                       color: Colors.white,
-                    ), label: Text(''),),
+                      size: 30,
+                    )),
 
                   ],
                 ),
