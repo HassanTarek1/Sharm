@@ -25,12 +25,14 @@ class _RestaurantsState extends State<Restaurants> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 160),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 320),
               padding: const EdgeInsets.fromLTRB(10, 40, 10, 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  IconButton(onPressed: (){}, icon: Icon(
+                  IconButton(onPressed: (){
+                    Navigator.pop(context);
+                  }, icon: Icon(
                     Icons.arrow_back,
                     color: Colors.white,
                     size: 30,
@@ -50,29 +52,37 @@ class _RestaurantsState extends State<Restaurants> {
               margin: EdgeInsets.all(10),
               padding: EdgeInsets.all(5),
               decoration: BoxDecoration(
-                  gradient:LinearGradient(colors: [Colors.indigo[200].withOpacity(0.95), Colors.indigo[50].withOpacity(0.95)] ),
-                borderRadius: BorderRadius.all(const Radius.circular(10))
+                  color: Color.fromRGBO(252, 238, 227, 1),
+                  borderRadius: BorderRadius.all(const Radius.circular(10)),
+                border: Border.all(color: Colors.black87)
                   ),
               child: Text('RESTAURANTS',
               style: TextStyle(fontSize: 28),),
               ),
-            
+
             Expanded(
                 child: Container(
-                  padding: EdgeInsets.all(20),
+                  padding: EdgeInsets.all(10),
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height*(2/3),
                   decoration: BoxDecoration(
-                      color: Colors.indigo[50].withOpacity(0.9),
+                      color: Color.fromRGBO(252, 238, 227, 0.9),
                       borderRadius: new BorderRadius.only(
                         topLeft: const Radius.circular(40.0),
                         topRight: const Radius.circular(40.0),
-                      )
+                      ),
+
                   ),
                   child: SizedBox(
                     child: ListView(
+
                       children: <Widget>[
-                        Card(
+                        Container(
+                          margin: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+
+                            borderRadius: BorderRadius.all(Radius.circular(20)),
+                            border: Border.all(color: Colors.black87)
+                          ),
                           child: ListTile(
                             contentPadding: const EdgeInsets.all(15),
                             onTap: (){},
@@ -86,7 +96,13 @@ class _RestaurantsState extends State<Restaurants> {
                             ),
                           ),
                         ),
-                        Card(
+                        Container(
+                          margin: EdgeInsets.all(10),
+                          decoration: BoxDecoration(
+
+                              borderRadius: BorderRadius.all(Radius.circular(20)),
+                              border: Border.all(color: Colors.black87)
+                          ),
                           child: ListTile(
                             contentPadding: const EdgeInsets.all(15),
                             onTap: (){},

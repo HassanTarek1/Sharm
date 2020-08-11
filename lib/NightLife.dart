@@ -82,7 +82,9 @@ class _NightLifeState extends State<NightLife> {
               child: ListView(
                   children: [
                     GestureDetector(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.pushNamed(context, 'restaurant');
+                      },
                       child: Card(
                           color: Colors.grey,
 
@@ -108,7 +110,9 @@ class _NightLifeState extends State<NightLife> {
 
                     ),
                     GestureDetector(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.pushNamed(context, 'mountain');
+                      },
                       child: Card(
                           color: Colors.grey,
 
@@ -134,7 +138,9 @@ class _NightLifeState extends State<NightLife> {
 
                     ),
                     GestureDetector(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.pushNamed(context, 'naama');
+                      },
                       child: Card(
                           color: Colors.grey,
 
@@ -160,7 +166,9 @@ class _NightLifeState extends State<NightLife> {
 
                     ),
                     GestureDetector(
-                      onTap: (){},
+                      onTap: (){
+                        Navigator.pushNamed(context, 'clubs');
+                      },
                       child: Card(
                           color: Colors.grey,
                           child: Stack(
