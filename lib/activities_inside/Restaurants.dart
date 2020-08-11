@@ -62,10 +62,10 @@ class _RestaurantsState extends State<Restaurants> {
 
             Expanded(
                 child: Container(
-                  padding: EdgeInsets.all(10),
+
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
-                      color: Color.fromRGBO(252, 238, 227, 0.9),
+                      color: Color.fromRGBO(252, 238, 227, 0.8),
                       borderRadius: new BorderRadius.only(
                         topLeft: const Radius.circular(40.0),
                         topRight: const Radius.circular(40.0),
@@ -77,7 +77,7 @@ class _RestaurantsState extends State<Restaurants> {
 
                       children: <Widget>[
                         Container(
-                          margin: EdgeInsets.all(10),
+                          margin: EdgeInsets.all(20),
                           decoration: BoxDecoration(
 
                             borderRadius: BorderRadius.all(Radius.circular(20)),
@@ -97,7 +97,7 @@ class _RestaurantsState extends State<Restaurants> {
                           ),
                         ),
                         Container(
-                          margin: EdgeInsets.all(10),
+                          margin: EdgeInsets.all(20),
                           decoration: BoxDecoration(
 
                               borderRadius: BorderRadius.all(Radius.circular(20)),

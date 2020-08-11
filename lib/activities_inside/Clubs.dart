@@ -21,7 +21,7 @@ class _ClubsState extends State<Clubs> {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             Container(
-              padding: const EdgeInsets.fromLTRB(10, 40, 10, 280),
+              padding: const EdgeInsets.fromLTRB(10, 40, 10, 320),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
