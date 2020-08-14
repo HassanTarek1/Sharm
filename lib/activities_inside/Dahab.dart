@@ -21,7 +21,7 @@ class _DahabState extends State<Dahab> {
           mainAxisAlignment: MainAxisAlignment.end,
           children: <Widget>[
             Container(
-              margin: EdgeInsets.fromLTRB(0, 0, 0, 100),
+              margin: EdgeInsets.fromLTRB(0, 0, 0, 0),
               padding: const EdgeInsets.fromLTRB(10, 40, 10, 10),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,

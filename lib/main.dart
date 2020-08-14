@@ -8,6 +8,7 @@ import 'package:sharm/activities_inside/RasShetan.dart';
 import 'package:sharm/activities_inside/Restaurants.dart';
 import 'package:sharm/activities_inside/Solo.dart';
 import 'package:sharm/activities_inside/St.Cathrine.dart';
+import 'package:sharm/activities_inside/TourGuide.dart';
 
 import 'NightLife.dart';
 
@@ -15,7 +16,7 @@ void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
   initialRoute: '/',
   routes: {
-    '/': (context) => StCathrine(),
+    '/': (context) => TourGuide(),
     'restaurant': (context) => Restaurants(),
     'mountain': (context) => Mountain(),
     'naama': (context) => Naama(),
