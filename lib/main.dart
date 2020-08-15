@@ -16,7 +16,7 @@ void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
   initialRoute: '/',
   routes: {
-    '/': (context) => TourGuide(),
+    '/': (context) => NightLife(),
     'restaurant': (context) => Restaurants(),
     'mountain': (context) => Mountain(),
     'naama': (context) => Naama(),
